@@ -23,7 +23,7 @@ public class HomeController {
        return al;
     }
 
-    @GetMapping("/get")
+    @GetMapping("/getdata")
     public List<Student> getData()
     {
 	 List<Student> li=hs.get();
