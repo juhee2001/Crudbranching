@@ -22,4 +22,11 @@ public class HomeController {
        List<Student> al=hs.add(list);
        return al;
     }
+
+    @GetMapping("/get")
+    public List<Student> getData()
+    {
+	 List<Student> li=hs.get();
+	 return li;
+    }
 }
