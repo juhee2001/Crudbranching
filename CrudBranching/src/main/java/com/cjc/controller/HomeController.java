@@ -12,12 +12,14 @@ import com.cjc.service.HomeService;
 
 @Controller
 public class HomeController {
-@Autowired 
-  HomeService hs;
-  @PostMapping("/addData")
-  public List<Student> addData(@RequestBody List<Student> list)
-  {
-  List<Student> al=hs.add(list);
-    return al;
-  }
+  
+	@Autowired 
+    HomeService hs;
+	
+    @PostMapping("/add")
+    public List<Student> addData(@RequestBody List<Student> list)
+    {
+       List<Student> al=hs.add(list);
+       return al;
+    }
 }
