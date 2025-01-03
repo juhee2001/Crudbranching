@@ -21,4 +21,10 @@ public class HomeServiceImpl implements HomeService {
 		return li;
 	}
 
+	@Override
+	public List<Student> get() {
+		List<Student> li=(List<Student>)hr.findAll();
+		return li;
+	}
+
 }

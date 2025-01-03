@@ -8,4 +8,6 @@ public interface HomeService {
 
 	public List<Student> add(List<Student> list);
 
+	public List<Student> get();
+
 }
